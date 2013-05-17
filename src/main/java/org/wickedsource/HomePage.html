@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>Apache Wicket Quickstart</title>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+		<div id="hd">
+			<div id="logo">
+				<img src="logo.png" width="50px" height="50px" alt="Wicket Logo" />
+				<h1>Apache Wicket</h1>
+			</div>
+		</div>
+		<div id="bd">
+			<h2>Wicket Bean Validation</h2>
+			<div wicket:id="feedback"/>
+			<form wicket:id="personForm">
+				Name: <input type="text" wicket:id="name"/> (only alphabetical characters)<br/>
+				Age: <input type="text" wicket:id="age"/> (>18)<br/>
+				Phone: <input type="text" wicket:id="phone"/> (^[0-9]{4}-[0-9]+$)<br/>
+				<input type="submit"/>
+			</form>
+		</div>
+		<div id="ft">
+		</div>
+	</body>
+</html>
